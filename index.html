@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lumix</title>
+</head>
+<body>
+    <header>
+        <div class="container logo-container" style="margin-top: -15px;">
+            <img src="./files/LumixLogo.png" alt="Lumix Logo" class="logo">
+            <h1>Welcome to Lumix</h1>
+        </div>
+    </header>
+
+    <nav class="nv">
+        <a href="#fast">Fast</a>
+        <a href="#giant">Giant</a>
+        <a href="#community">Community</a>
+        <a href="#secure">Secure</a>
+        <a href="#high-low-level">High and Low Level</a>
+        <a href="#interpreted-compiled">Interpreted and Compiled</a>
+        <a href="#installation">Installation</a>
+        <a href="#example">Example</a>
+        <a href="#information">Information</a>
+    </nav>
+
+    <section id="example" style="background-color: #2d2d2d; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; max-width: 600px; width: 100%; display: flex; flex-direction: column;">
+        <button style="align-self: flex-end; margin-top: -30px; background-color: #333333; color: #ffffff; border: none; padding: 8px; cursor: pointer; border-radius: 4px; font-size: 14px;margin-top: 1px;margin-bottom: 10px;" onclick="copyCode()">Copy</button>
+        <code id="code" style="display: block; white-space: pre; font-family: 'Courier New', monospace; background-color: #1e1e1e; color: #abb2bf; border-radius: 8px; overflow-x: auto; font-size: 16px;">
+            <pre>
+        op main() {
+            greeting = "Hello, world!";
+            print(greeting);
+        }
+            </pre>
+        </code>
+        <p style="margin: 0; padding: 10px; text-align: right; color: #adadad;">This Lumix code opens a main entry to the program and then creates a variable called greeting then logs his value.</p>
+    </section>
+    
+
+    <section id="fast" class="container">
+        <h2>Fast (Performant)</h2>
+        <p>Lumix strives to be a top-tier programming language, prioritizing high performance and developer satisfaction. With a focus on efficiency and elegant syntax, Lumix aims to provide a streamlined experience for programmers. Our commitment to excellence drives us to constantly refine and enhance the language, ensuring that developers have a tool that is not only powerful but also a joy to work with.</p>
+    </section>
+
+    <section id="giant" class="container">
+        <h2>Giant (A Lot of Libraries)</h2>
+        <p>Another pivotal goal for Lumix is to furnish developers with a comprehensive array of libraries, enriching their toolkit and simplifying the development process. By providing an extensive set of libraries, Lumix aims to empower developers with ready-made solutions, enabling them to expedite their projects and focus on building innovative functionalities. This commitment to a rich library ecosystem underscores Lumix's dedication to making development not only efficient but also highly versatile and adaptable to various application needs.</p>
+    </section>
+
+    <section id="community" class="container">
+        <h2>Big Community</h2>
+        <p>Lumix acknowledges the significance of fostering a lively and engaged community around its platform. Cultivating a strong sense of collaboration and knowledge-sharing is a key priority. Lumix aims to create an inclusive space where developers can connect, exchange ideas, and collectively contribute to the growth of the language. This commitment to community involvement underscores Lumix's belief that a thriving community is instrumental in the continual evolution and improvement of the language.</p>
+    </section>
+
+    <section id="secure" class="container">
+        <h2>Secure</h2>
+        <p>Security stands as a paramount concern in contemporary software development within the Lumix ecosystem. Recognizing the ever-growing importance of safeguarding digital assets and user data, Lumix places a high priority on implementing robust security measures. By adhering to best practices and staying vigilant against emerging threats, Lumix is committed to providing a secure environment for developers to build applications with confidence. This commitment reflects Lumix's dedication to ensuring the integrity and trustworthiness of the software developed within its framework.</p>
+    </section>
+
+    <section id="high-low-level" class="container">
+        <h2>High and Low Level Simultaneously</h2>
+        <p>Lumix distinguishes itself by presenting a unique proposition—it seamlessly combines both high and low-level programming capabilities. This dual nature allows developers to harness the power of low-level optimizations while benefiting from the expressiveness and ease of use associated with high-level languages. Lumix's versatility bridges the gap between intricate system-level operations and the simplicity desired in application-level development. This distinctive feature positions Lumix as an innovative language that caters to a wide spectrum of programming needs, making it a valuable choice for developers seeking flexibility and efficiency in their projects.</p>
+    </section>
+
+    <section id="interpreted-compiled" class="container">
+        <h2>Interpreted and Compiled</h2>
+        <p>Lumix transcends the definition of a mere programming language; it stands as a comprehensive platform meticulously designed to meet the multifaceted demands of modern development. What sets Lumix apart is its unique duality—it seamlessly integrates both interpreted and compiled approaches. This distinctive feature empowers developers with the flexibility to choose the most suitable mode based on the specific requirements of their projects. Lumix, therefore, is not just a language; it is a dynamic ecosystem that adapts to the diverse needs of developers, offering an unparalleled blend of interpretative ease and compiled efficiency.</p>
+    </section>
+
+    <section id="installation" class="container install-section">
+        <img src="./files/download.png" alt="Download">
+        <h2 style="color: #28afe9;">Installation</h2>
+        <p style="color: #28afe9">To install Lumix, click the button below:</p>
+        <button class="install-btn" onclick="installLumix()">Install Lumix</button>
+        <!-- Use dropbox to do the download link -->
+    </section>
+
+    <section id="information" class="container info-section">
+        <h2>Information</h2>
+        <p>Lumix is a modern programming language designed for simplicity and efficiency. It provides a clean syntax and powerful features, making it suitable for a wide range of applications. Lumix aims to enhance the development experience and promote readability in code.</p>
+    </section>    
+    
+    <footer>
+        <div class="container">
+            &copy; 2023 Lumix. All rights reserved.
+        </div>
+    </footer>
+        
+</body>
+<script src="./index.js"></script>
+</html>
