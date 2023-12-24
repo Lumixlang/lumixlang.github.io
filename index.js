@@ -1,3 +1,16 @@
+function logMessageBasedOnDate() {
+    const currentDate = new Date();
+    const startDate = new Date(currentDate.getFullYear(), 11, 20); // Month is 0-indexed
+    const endDate = new Date(currentDate.getFullYear(), 11, 27);
+    if (currentDate >= startDate && currentDate <= endDate) {
+        console.log("Merry Christmas! Your special message for the date range.");
+    } else {
+        console.log("No special message for today.");
+    }
+}
+
+logMessageBasedOnDate();
+
 function installLumix() {
     alert("In maintenance.");
 }
