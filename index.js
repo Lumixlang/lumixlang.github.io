@@ -1,13 +1,9 @@
-function logMessageBasedOnDate() {
-    const currentDate = new Date();
-    const startDate = new Date(currentDate.getFullYear(), 11, 20); // Month is 0-indexed
-    const endDate = new Date(currentDate.getFullYear(), 11, 27);
-    if (currentDate >= startDate && currentDate <= endDate) {
-        alert("Happy holidays from Lumix :)")
-    }
+const currentDate = new Date();
+const startDate = new Date(currentDate.getFullYear(), 11, 20); // Month is 0-indexed
+const endDate = new Date(currentDate.getFullYear(), 11, 27);
+if (currentDate >= startDate && currentDate <= endDate) {
+    alert("Happy holidays from Lumix :)")
 }
-
-logMessageBasedOnDate();
 
 function installLumix() {
     alert("In maintenance.");
