@@ -1,6 +1,6 @@
 const currentDate = new Date();
 const startDate = new Date(currentDate.getFullYear(), 11, 20); // Month is 0-indexed
-const endDate = new Date(currentDate.getFullYear(), 11, 27);
+const endDate = new Date(currentDate.getFullYear(), 12, 1);
 let scripts = document.getElementById("scripts");
 if (currentDate >= startDate && currentDate <= endDate) {
     alert("Happy holidays from Lumix :)");
